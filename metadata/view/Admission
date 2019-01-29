@@ -1,0 +1,559 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "admission",
+        "designer|userClassName": "Admission",
+        "flex": 5,
+        "itemId": "Admission",
+        "layout": "card"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "flex": "number",
+        "itemId": "string",
+        "layout": "string"
+    },
+    "name": "MyPanel",
+    "designerId": "bf80c907-2e35-4d2b-b3f5-66ada4406020",
+    "viewControllerInstanceId": "7d902345-a778-4c63-b177-ba18c677bf65",
+    "viewModelInstanceId": "8dd210e6-2df3-44a7-a2d0-f9ae1e053190",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": "100%"
+            },
+            "configAlternates": {
+                "height": "auto"
+            },
+            "name": "MyPanel9",
+            "designerId": "2120f483-230c-4a19-b9bc-e38f41e114d8",
+            "cn": [
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "border": "12px",
+                        "dock": "top",
+                        "height": 75
+                    },
+                    "configAlternates": {
+                        "dock": "string",
+                        "height": "auto",
+                        "border": "auto"
+                    },
+                    "name": "MyToolbar1",
+                    "designerId": "5f4a4ae4-6e5e-4afc-ba38-611f63db907e",
+                    "cn": [
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "html": "<font size=\"5pt\"><b>Admission</b></font>",
+                                "layout|flex": 4,
+                                "margin": 10
+                            },
+                            "configAlternates": {
+                                "html": "string",
+                                "layout|flex": "number",
+                                "margin": "auto"
+                            },
+                            "name": "MyLabel1",
+                            "designerId": "b522fc2f-fdc6-4087-90f2-b6cfdb6a43c4"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "border": "2px",
+                                "dock": "right",
+                                "fieldLabel": "",
+                                "height": 35,
+                                "layout|flex": 1,
+                                "width": 241
+                            },
+                            "configAlternates": {
+                                "border": "auto",
+                                "dock": "string",
+                                "fieldLabel": "string",
+                                "height": "auto",
+                                "layout|flex": "number",
+                                "width": "auto"
+                            },
+                            "name": "MyTextField2",
+                            "designerId": "0688d99b-ea75-4d53-be72-70180151254c"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "border": "1px",
+                        "dock": null
+                    },
+                    "configAlternates": {
+                        "dock": "string",
+                        "border": "auto"
+                    },
+                    "name": "MyToolbar2",
+                    "designerId": "36ddd2ad-63f0-4417-a81e-5ffb9783ec82",
+                    "cn": [
+                        {
+                            "type": "Ext.container.ButtonGroup",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "columns": 1,
+                                "flex": 1,
+                                "frame": false,
+                                "layout|flex": null,
+                                "margin": "50 0 0 20"
+                            },
+                            "configAlternates": {
+                                "columns": "number",
+                                "flex": "number",
+                                "frame": "boolean",
+                                "layout|flex": "number",
+                                "margin": "auto"
+                            },
+                            "name": "MyButtonGroup1",
+                            "designerId": "338abe60-6a35-41ba-9fb6-8c15428ed07f",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "html": "<font size =\"3pt\"><b>Pendaftaran</b></font>"
+                                    },
+                                    "configAlternates": {
+                                        "html": "string"
+                                    },
+                                    "name": "MyLabel2",
+                                    "designerId": "b1904a9d-abac-47f2-a0d9-a646b7f768df"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Rawat Jalan",
+                                        "textAlign": "left"
+                                    },
+                                    "configAlternates": {
+                                        "text": "string",
+                                        "textAlign": "string"
+                                    },
+                                    "name": "MyButton5",
+                                    "designerId": "7fefa6a1-b8e7-40cf-a051-606cc3e903c3",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onRawatjalanClick",
+                                                "implHandler": [
+                                                    "var view = this.getView();",
+                                                    "",
+                                                    "    var form = Ext.create('widget.formrawjal', {",
+                                                    "    FormRawJal: view.FormRawJal,",
+                                                    "    ",
+                                                    "});",
+                                                    "",
+                                                    "// Show window",
+                                                    "form.show();",
+                                                    "",
+                                                    "",
+                                                    ""
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onRawatjalanClick",
+                                            "designerId": "2a9d8965-af8d-4192-92b0-58f4c4ca696a"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Instalasi Gawat Darurat",
+                                        "textAlign": "left"
+                                    },
+                                    "configAlternates": {
+                                        "text": "string",
+                                        "textAlign": "string"
+                                    },
+                                    "name": "MyButton6",
+                                    "designerId": "5b1aac97-2e0c-4888-8383-5dbac29fdb80"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Rawat Inap",
+                                        "textAlign": "left"
+                                    },
+                                    "configAlternates": {
+                                        "text": "string",
+                                        "textAlign": "string"
+                                    },
+                                    "name": "MyButton2",
+                                    "designerId": "86985366-111d-4250-a46b-f3e67f62db5a"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Penunjang Medis",
+                                        "textAlign": "left"
+                                    },
+                                    "configAlternates": {
+                                        "text": "string",
+                                        "textAlign": "string"
+                                    },
+                                    "name": "MyButton1",
+                                    "designerId": "16699425-5ec5-4b24-bdcb-0b39160b5ea5"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Home Care",
+                                        "textAlign": "left"
+                                    },
+                                    "configAlternates": {
+                                        "text": "string",
+                                        "textAlign": "string"
+                                    },
+                                    "name": "MyButton8",
+                                    "designerId": "bca60b87-1503-42ca-a9f6-ee0730f4e5d1"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Transaksi Non Pasien",
+                                        "textAlign": "left"
+                                    },
+                                    "configAlternates": {
+                                        "text": "string",
+                                        "textAlign": "string"
+                                    },
+                                    "name": "MyButton7",
+                                    "designerId": "4c542653-2f9c-4f1f-a140-e500ceaf5e71"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.container.ButtonGroup",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "bodyBorder": false,
+                                "columns": 1,
+                                "dock": null,
+                                "flex": 2,
+                                "frame": false,
+                                "height": 202,
+                                "layout|flex": null,
+                                "margin": "0 0 0 20"
+                            },
+                            "configAlternates": {
+                                "bodyBorder": "boolean",
+                                "columns": "number",
+                                "dock": "string",
+                                "flex": "number",
+                                "frame": "boolean",
+                                "height": "auto",
+                                "layout|flex": "number",
+                                "margin": "auto"
+                            },
+                            "name": "MyButtonGroup2",
+                            "designerId": "fca0c6cf-f294-4c92-8864-ffab62b6a763",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "html": "<font size =\"3pt\"><b>Booking</b></font>"
+                                    },
+                                    "configAlternates": {
+                                        "html": "string"
+                                    },
+                                    "name": "MyLabel3",
+                                    "designerId": "2b72d36a-a0dd-4dae-89bb-6f636b3f338b"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Pendaftaran Rawat Jalan",
+                                        "textAlign": "left"
+                                    },
+                                    "configAlternates": {
+                                        "text": "string",
+                                        "textAlign": "string"
+                                    },
+                                    "name": "MyButton9",
+                                    "designerId": "d438c1f6-6f16-4690-84fd-2d88851583b5"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Kamar",
+                                        "textAlign": "left"
+                                    },
+                                    "configAlternates": {
+                                        "text": "string",
+                                        "textAlign": "string"
+                                    },
+                                    "name": "MyButton10",
+                                    "designerId": "77817b48-8c76-4573-84f7-003a80ffbe79"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Pencatatan Rujukan Pasien",
+                                        "textAlign": "left"
+                                    },
+                                    "configAlternates": {
+                                        "text": "string",
+                                        "textAlign": "string"
+                                    },
+                                    "name": "MyButton11",
+                                    "designerId": "d267bb90-b0fc-4764-a112-81a0f6aee955"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "border": "1px",
+                        "dock": null,
+                        "margin": "0,5 0 0 0"
+                    },
+                    "configAlternates": {
+                        "dock": "string",
+                        "border": "auto",
+                        "margin": "auto"
+                    },
+                    "name": "MyToolbar3",
+                    "designerId": "202cea65-4bad-4693-9426-efa5494babf4",
+                    "cn": [
+                        {
+                            "type": "Ext.container.ButtonGroup",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "columns": 1,
+                                "flex": 1,
+                                "frame": false,
+                                "layout|flex": null,
+                                "margin": "50 0 0 20"
+                            },
+                            "configAlternates": {
+                                "columns": "number",
+                                "flex": "number",
+                                "frame": "boolean",
+                                "layout|flex": "number",
+                                "margin": "auto"
+                            },
+                            "name": "MyButtonGroup1",
+                            "designerId": "d39e891f-0f67-4c3b-927a-f336e47c59f1",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "html": "<font size =\"3pt\"><b>Lainnya</b></font>"
+                                    },
+                                    "configAlternates": {
+                                        "html": "string"
+                                    },
+                                    "name": "MyLabel2",
+                                    "designerId": "904169df-1f9e-4891-9c7d-4f07d9fed2d0"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Peminjaman Buku Status",
+                                        "textAlign": "left"
+                                    },
+                                    "configAlternates": {
+                                        "text": "string",
+                                        "textAlign": "string"
+                                    },
+                                    "name": "MyButton5",
+                                    "designerId": "3d968ada-9ffc-4a16-b229-c7b326cbafe9"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Pengembalian Buku Status",
+                                        "textAlign": "left"
+                                    },
+                                    "configAlternates": {
+                                        "text": "string",
+                                        "textAlign": "string"
+                                    },
+                                    "name": "MyButton6",
+                                    "designerId": "0a30bf71-a95a-4e55-b97e-31f14fb31e8e"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Tracking Berkas Poliklinik",
+                                        "textAlign": "left"
+                                    },
+                                    "configAlternates": {
+                                        "text": "string",
+                                        "textAlign": "string"
+                                    },
+                                    "name": "MyButton2",
+                                    "designerId": "877aae37-8568-409b-abeb-b12641e4ec9c"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Tracking Berkas Rawat Inap",
+                                        "textAlign": "left"
+                                    },
+                                    "configAlternates": {
+                                        "text": "string",
+                                        "textAlign": "string"
+                                    },
+                                    "name": "MyButton1",
+                                    "designerId": "ded20728-fcaf-49a3-9f3d-519a8de6ad5d"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

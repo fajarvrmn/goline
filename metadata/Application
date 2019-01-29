@@ -1,0 +1,27 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "name": "GOlineplus",
+        "requires": [
+            "Ext.window.MessageBox"
+        ],
+        "views": [
+            "Menu",
+            "LoginForm",
+            "Admission",
+            "FormRawJal"
+        ]
+    },
+    "configAlternates": {
+        "name": "string",
+        "requires": "typedarray",
+        "views": "typedarray"
+    },
+    "name": "Application",
+    "designerId": "application"
+}
