@@ -20,11 +20,18 @@ Ext.Loader.setConfig({
 
 
 Ext.application({
+    models: [
+        'Unitpelayanann'
+    ],
     views: [
         'Menu',
         'LoginForm',
-        'Admission',
-        'FormRawJal'
+        'FormRawJal',
+        'UnitPelayananWindow',
+        'ADM',
+        'admPanel',
+        'FormRawJal3',
+        'FormRawJal1'
     ],
     name: 'GOlineplus',
 
@@ -33,7 +40,7 @@ Ext.application({
     ],
 
     launch: function() {
-        Ext.create('GOlineplus.view.LoginForm');
+        Ext.create('GOlineplus.view.Menu');
     }
 
 });

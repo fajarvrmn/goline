@@ -1,0 +1,18 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "formrawjal1",
+        "designer|userClassName": "FormRawatJlnViewModel1"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "FormRawatJlnViewModel1",
+    "designerId": "9b44a579-8fb0-4ce3-9d06-4ec7be6bcce0"
+}

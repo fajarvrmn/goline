@@ -6,6 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|initialView": true,
         "designer|userAlias": "menu",
         "designer|userClassName": "Menu",
         "dock": null,
@@ -39,12 +40,13 @@
             "codeClass": null,
             "userConfig": {
                 "bodyBorder": false,
-                "border": false,
+                "border": true,
                 "designer|displayName": "navbar",
+                "flex": 1.5,
+                "layout|flex": 1,
                 "layout|region": "west",
                 "margin": "0 1 0 0",
-                "scrollable": true,
-                "width": 216
+                "scrollable": false
             },
             "configAlternates": {
                 "layout|flex": "number",
@@ -54,7 +56,8 @@
                 "bodyBorder": "boolean",
                 "border": "boolean",
                 "margin": "auto",
-                "width": "auto"
+                "width": "auto",
+                "flex": "number"
             },
             "name": "MyPanel1",
             "designerId": "9a4a63ba-c6f0-4472-b8e6-bf66eb28d08d",
@@ -62,16 +65,16 @@
                 {
                     "type": "Ext.panel.Panel",
                     "reference": {
-                        "name": "dockedItems",
+                        "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
                         "bodyBorder": false,
                         "border": false,
-                        "dock": "top",
-                        "height": 67,
-                        "width": 214
+                        "dock": null,
+                        "height": 95,
+                        "width": "100%"
                     },
                     "configAlternates": {
                         "dock": "string",
@@ -93,9 +96,9 @@
                             "codeClass": null,
                             "userConfig": {
                                 "height": 29,
-                                "margin": "24 20 20 20",
+                                "margin": "24 20 20 50",
                                 "src": "images/logo.png",
-                                "width": 143
+                                "width": 134
                             },
                             "configAlternates": {
                                 "height": "auto",
@@ -118,7 +121,7 @@
                     "userConfig": {
                         "dock": null,
                         "height": "100%",
-                        "width": 205
+                        "width": "100%"
                     },
                     "configAlternates": {
                         "dock": "string",
@@ -141,7 +144,7 @@
                                 "frame": false,
                                 "layout|flex": null,
                                 "title": "",
-                                "width": 190
+                                "width": 235
                             },
                             "configAlternates": {
                                 "columns": "number",
@@ -163,7 +166,7 @@
                                     "codeClass": null,
                                     "userConfig": {
                                         "text": "Admission",
-                                        "width": 182
+                                        "width": 218
                                     },
                                     "configAlternates": {
                                         "layout|flex": "number",
@@ -180,23 +183,186 @@
             ]
         },
         {
-            "type": "linkedinstance",
+            "type": "Ext.panel.Panel",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
+                "flex": 5,
+                "itemId": "Admission",
                 "layout|flex": 1,
-                "layout|region": "center"
+                "layout|region": "center",
+                "scrollable": true
             },
             "configAlternates": {
+                "designer|userAlias": "string",
+                "designer|userClassName": "string",
+                "flex": "number",
+                "itemId": "string",
+                "layout": "string",
                 "layout|flex": "number",
-                "layout|region": "string"
+                "layout|region": "string",
+                "width": "auto",
+                "scrollable": "auto"
             },
-            "name": "admission",
-            "designerId": "167bcc9b-868d-41c7-9dc9-55d150bf8804",
-            "masterInstanceId": "bf80c907-2e35-4d2b-b3f5-66ada4406020"
+            "name": "MyPanel",
+            "designerId": "bf80c907-2e35-4d2b-b3f5-66ada4406020",
+            "cn": [
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "top",
+                        "flex": 4,
+                        "height": 95
+                    },
+                    "configAlternates": {
+                        "dock": "string",
+                        "height": "auto",
+                        "border": "auto",
+                        "flex": "number"
+                    },
+                    "name": "MyToolbar1",
+                    "designerId": "5f4a4ae4-6e5e-4afc-ba38-611f63db907e",
+                    "cn": [
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "html": "<font size=\"5pt\"><b>Admission</b></font>",
+                                "layout|flex": 4,
+                                "margin": 10
+                            },
+                            "configAlternates": {
+                                "html": "string",
+                                "layout|flex": "number",
+                                "margin": "auto"
+                            },
+                            "name": "MyLabel1",
+                            "designerId": "b522fc2f-fdc6-4087-90f2-b6cfdb6a43c4"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "border": "2px",
+                                "dock": "right",
+                                "fieldLabel": "",
+                                "height": 35,
+                                "margin": "0 15 0 0",
+                                "width": 280
+                            },
+                            "configAlternates": {
+                                "border": "auto",
+                                "dock": "string",
+                                "fieldLabel": "string",
+                                "height": "auto",
+                                "layout|flex": "number",
+                                "width": "auto",
+                                "margin": "auto"
+                            },
+                            "name": "MyTextField2",
+                            "designerId": "0688d99b-ea75-4d53-be72-70180151254c"
+                        },
+                        {
+                            "type": "Ext.Img",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": "35px",
+                                "layout|flex": null,
+                                "margin": "0 40 0 0",
+                                "src": "images\\sec.png",
+                                "width": "35px"
+                            },
+                            "configAlternates": {
+                                "height": "auto",
+                                "layout|flex": "number",
+                                "margin": "auto",
+                                "src": "uri",
+                                "width": "auto"
+                            },
+                            "name": "MyImg2",
+                            "designerId": "d1373af4-363c-45d2-80ab-26f13c2f1111"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "ContentPanel",
+                        "height": 923,
+                        "scrollable": true,
+                        "title": "My Panel"
+                    },
+                    "configAlternates": {
+                        "designer|userAlias": "string",
+                        "designer|userClassName": "string",
+                        "height": "auto",
+                        "scrollable": "auto",
+                        "title": "string",
+                        "designer|displayName": "string"
+                    },
+                    "name": "MyPanel8",
+                    "designerId": "6a69628f-694a-4862-afef-ae2cab4df417",
+                    "viewControllerInstanceId": "242b123f-0ad0-4fbe-85ad-f257920d149f",
+                    "viewModelInstanceId": "5aed6800-e51f-43e3-8e15-d465b2325d5c",
+                    "cn": [
+                        {
+                            "type": "linkedinstance",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "admpanel",
+                            "designerId": "0ec56d96-1d85-4b68-a7b2-58e046d07dff",
+                            "masterInstanceId": "a4dc9370-638b-4920-a5d6-911661bf73b0"
+                        },
+                        {
+                            "type": "linkedinstance",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "hidden": true,
+                                "hideMode": "visibility"
+                            },
+                            "configAlternates": {
+                                "hideMode": "string",
+                                "hidden": "boolean"
+                            },
+                            "name": "formrawjal3",
+                            "designerId": "c0d6844b-a199-40ec-856d-40bd8cd1df87",
+                            "masterInstanceId": "058bc8fa-a59f-4b97-983b-7654eb2280d5"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

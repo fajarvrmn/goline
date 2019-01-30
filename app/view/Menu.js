@@ -19,11 +19,14 @@ Ext.define('GOlineplus.view.Menu', {
 
     requires: [
         'GOlineplus.view.MenuViewModel',
-        'GOlineplus.view.Admission',
+        'GOlineplus.view.admPanel',
+        'GOlineplus.view.FormRawJal3',
         'Ext.Img',
         'Ext.toolbar.Toolbar',
         'Ext.container.ButtonGroup',
-        'Ext.button.Button'
+        'Ext.button.Button',
+        'Ext.form.Label',
+        'Ext.form.field.Text'
     ],
 
     viewModel: {
@@ -37,48 +40,46 @@ Ext.define('GOlineplus.view.Menu', {
     items: [
         {
             xtype: 'panel',
+            flex: 1,
             region: 'west',
-            border: false,
+            border: true,
+            flex: 1.5,
             margin: '0 1 0 0',
-            scrollable: true,
-            width: 216,
+            scrollable: false,
             bodyBorder: false,
-            dockedItems: [
+            items: [
                 {
                     xtype: 'panel',
                     border: false,
-                    dock: 'top',
-                    height: 67,
-                    width: 214,
+                    height: 95,
+                    width: '100%',
                     bodyBorder: false,
                     items: [
                         {
                             xtype: 'image',
                             height: 29,
-                            margin: '24 20 20 20',
-                            width: 143,
+                            margin: '24 20 20 50',
+                            width: 134,
                             src: 'images/logo.png'
                         }
                     ]
-                }
-            ],
-            items: [
+                },
                 {
                     xtype: 'toolbar',
                     height: '100%',
-                    width: 205,
+                    width: '100%',
                     items: [
                         {
                             xtype: 'buttongroup',
                             dock: 'left',
                             frame: false,
-                            width: 190,
+                            width: 235,
                             title: '',
                             columns: 1,
                             items: [
                                 {
                                     xtype: 'button',
-                                    width: 182,
+                                    width: 218,
                                     text: 'Admission'
                                 }
                             ]
@@ -88,9 +89,62 @@ Ext.define('GOlineplus.view.Menu', {
             ]
         },
         {
-            xtype: 'admission',
+            xtype: 'panel',
             flex: 1,
-            region: 'center'
+            region: 'center',
+            flex: 5,
+            itemId: 'Admission',
+            scrollable: true,
+            dockedItems: [
+                {
+                    xtype: 'toolbar',
+                    dock: 'top',
+                    flex: 4,
+                    height: 95,
+                    items: [
+                        {
+                            xtype: 'label',
+                            flex: 4,
+                            html: '<font size="5pt"><b>Admission</b></font>',
+                            margin: 10
+                        },
+                        {
+                            xtype: 'textfield',
+                            border: '2px',
+                            dock: 'right',
+                            height: 35,
+                            margin: '0 15 0 0',
+                            width: 280,
+                            fieldLabel: ''
+                        },
+                        {
+                            xtype: 'image',
+                            height: '35px',
+                            margin: '0 40 0 0',
+                            width: '35px',
+                            src: 'images%5Csec.png'
+                        }
+                    ]
+                }
+            ],
+            items: [
+                {
+                    xtype: 'panel',
+                    height: 923,
+                    scrollable: true,
+                    title: 'My Panel',
+                    items: [
+                        {
+                            xtype: 'admpanel'
+                        },
+                        {
+                            xtype: 'formrawjal3',
+                            hidden: true,
+                            hideMode: 'visibility'
+                        }
+                    ]
+                }
+            ]
         }
     ]
 

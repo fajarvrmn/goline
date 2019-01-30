@@ -1,0 +1,138 @@
+{
+    "success": true,
+    "data": [
+        {
+            "id": 1,
+            "kodepoli": "9110",
+            "namapoli": "Poli Umum",
+            "created_at": "2019-01-30 06:23:28",
+            "updated_at": "2019-01-30 06:23:28"
+        },
+        {
+            "id": 2,
+            "kodepoli": "9120",
+            "namapoli": "Poli Gigi",
+            "created_at": "2019-01-30 06:23:28",
+            "updated_at": "2019-01-30 06:23:28"
+        },
+        {
+            "id": 3,
+            "kodepoli": "9130",
+            "namapoli": "Poli Anak",
+            "created_at": "2019-01-30 06:23:28",
+            "updated_at": "2019-01-30 06:23:28"
+        },
+        {
+            "id": 4,
+            "kodepoli": "9131",
+            "namapoli": "Poli Kebidanan & Kandungan",
+            "created_at": "2019-01-30 06:23:28",
+            "updated_at": "2019-01-30 06:23:28"
+        },
+        {
+            "id": 5,
+            "kodepoli": "9132",
+            "namapoli": "Poli Penyakit Dalam",
+            "created_at": "2019-01-30 06:23:28",
+            "updated_at": "2019-01-30 06:23:28"
+        },
+        {
+            "id": 6,
+            "kodepoli": "9133",
+            "namapoli": "Poli Saraf",
+            "created_at": "2019-01-30 06:23:28",
+            "updated_at": "2019-01-30 06:23:28"
+        },
+        {
+            "id": 7,
+            "kodepoli": "9134",
+            "namapoli": "Poli THT",
+            "created_at": "2019-01-30 06:23:28",
+            "updated_at": "2019-01-30 06:23:28"
+        },
+        {
+            "id": 8,
+            "kodepoli": "9135",
+            "namapoli": "Poli Mata",
+            "created_at": "2019-01-30 06:23:28",
+            "updated_at": "2019-01-30 06:23:28"
+        },
+        {
+            "id": 9,
+            "kodepoli": "9136",
+            "namapoli": "Poli Kulit & Kelamin",
+            "created_at": "2019-01-30 06:23:28",
+            "updated_at": "2019-01-30 06:23:28"
+        },
+        {
+            "id": 10,
+            "kodepoli": "9137",
+            "namapoli": "Poli Kedokteran Jiwa",
+            "created_at": "2019-01-30 06:23:28",
+            "updated_at": "2019-01-30 06:23:28"
+        },
+        {
+            "id": 11,
+            "kodepoli": "9138",
+            "namapoli": "Poli Jentung & Pembuluh Darah",
+            "created_at": "2019-01-30 06:23:28",
+            "updated_at": "2019-01-30 06:23:28"
+        },
+        {
+            "id": 12,
+            "kodepoli": "9139",
+            "namapoli": "Poli Bedah Umum",
+            "created_at": "2019-01-30 06:23:28",
+            "updated_at": "2019-01-30 06:23:28"
+        },
+        {
+            "id": 13,
+            "kodepoli": "9140",
+            "namapoli": "Poli Bedah Saraf",
+            "created_at": "2019-01-30 06:23:28",
+            "updated_at": "2019-01-30 06:23:28"
+        },
+        {
+            "id": 14,
+            "kodepoli": "9141",
+            "namapoli": "Poli Bedah Othopedi",
+            "created_at": "2019-01-30 06:23:29",
+            "updated_at": "2019-01-30 06:23:29"
+        },
+        {
+            "id": 15,
+            "kodepoli": "9142",
+            "namapoli": "Poli Bedah Urologi",
+            "created_at": "2019-01-30 06:23:29",
+            "updated_at": "2019-01-30 06:23:29"
+        },
+        {
+            "id": 16,
+            "kodepoli": "9143",
+            "namapoli": "Poli Paru",
+            "created_at": "2019-01-30 06:23:29",
+            "updated_at": "2019-01-30 06:23:29"
+        },
+        {
+            "id": 17,
+            "kodepoli": "9144",
+            "namapoli": "Poli Gizi",
+            "created_at": "2019-01-30 06:23:29",
+            "updated_at": "2019-01-30 06:23:29"
+        },
+        {
+            "id": 18,
+            "kodepoli": "9145",
+            "namapoli": "Poli Rehab Medik",
+            "created_at": "2019-01-30 06:23:29",
+            "updated_at": "2019-01-30 06:23:29"
+        },
+        {
+            "id": 19,
+            "kodepoli": "9146",
+            "namapoli": "Poli Akupuntur",
+            "created_at": "2019-01-30 06:23:29",
+            "updated_at": "2019-01-30 06:23:29"
+        }
+    ]
+}

@@ -6,7 +6,6 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|initialView": true,
         "designer|userAlias": "loginform",
         "designer|userClassName": "LoginForm",
         "height": "100%",
@@ -87,277 +86,474 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|displayName": "kanan panel",
-                "flex": 1,
+                "container|align": "stretchmax",
+                "layout": "vbox",
                 "layout|flex": 1,
                 "layout|region": "center"
             },
             "configAlternates": {
-                "flex": "number",
+                "container|align": "string",
+                "layout": "string",
                 "layout|flex": "number",
-                "layout|region": "string",
-                "designer|displayName": "string"
+                "layout|region": "string"
             },
-            "name": "MyPanel4",
-            "designerId": "71c3da07-ab42-45a7-bbb8-49186b5902f8",
+            "name": "MyPanel",
+            "designerId": "3d970013-da23-4eb5-8cfb-58809a48125c",
             "cn": [
                 {
-                    "type": "Ext.toolbar.Spacer",
+                    "type": "Ext.container.Container",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "height": "30%",
-                        "width": "100%"
+                        "container|align": "stretchmax",
+                        "flex": 1,
+                        "layout": "vbox"
                     },
                     "configAlternates": {
-                        "height": "auto",
-                        "width": "auto"
-                    },
-                    "name": "MySpacer1",
-                    "designerId": "94ee02e9-c8fc-4fb6-a24e-5335e1503997"
-                },
-                {
-                    "type": "Ext.form.Panel",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "bodyPadding": 20,
-                        "border": false,
-                        "flex": null,
-                        "height": "100%",
-                        "itemId": null,
-                        "jsonSubmit": false,
-                        "layout": "auto",
-                        "margin": 30,
-                        "maxHeight": null,
-                        "width": "100%"
-                    },
-                    "configAlternates": {
-                        "bodyPadding": "auto",
-                        "height": "auto",
-                        "itemId": "string",
-                        "margin": "auto",
-                        "title": "string",
-                        "titleAlign": "string",
-                        "layout": "string",
-                        "width": "auto",
-                        "border": "boolean",
-                        "maxHeight": "number",
-                        "layout|flex": "number",
-                        "dock": "string",
+                        "container|align": "string",
                         "flex": "number",
-                        "jsonSubmit": "boolean"
+                        "layout": "string"
                     },
-                    "name": "MyForm",
-                    "designerId": "e72e7d48-3e2b-45f6-b1f5-11500ac5945c",
+                    "name": "MyContainer1",
+                    "designerId": "7e64b810-6d4b-47bd-9ac6-218d8620148d",
                     "cn": [
                         {
-                            "type": "Ext.form.Label",
+                            "type": "Ext.toolbar.Toolbar",
                             "reference": {
                                 "name": "items",
                                 "type": "array"
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "dock": null,
-                                "html": "<font size=\"10pt\"><b>Sign In</b></font>",
-                                "resizable": false
+                                "flex": 2,
+                                "layout|flex": 1,
+                                "width": "100%"
                             },
                             "configAlternates": {
-                                "dock": "string",
-                                "height": "auto",
-                                "resizable": "boolean",
-                                "text": "string",
-                                "html": "string",
-                                "width": "auto",
-                                "layout|region": "string"
-                            },
-                            "name": "MyLabel",
-                            "designerId": "e26a1daa-5655-4e3f-a226-db284e89ab0c"
-                        },
-                        {
-                            "type": "Ext.toolbar.Spacer",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "height": 35,
-                                "width": 150
-                            },
-                            "configAlternates": {
-                                "height": "auto",
-                                "width": "auto",
-                                "layout|region": "string"
-                            },
-                            "name": "MySpacer",
-                            "designerId": "c4aad479-0577-40ac-82ca-1566c18fac5a"
-                        },
-                        {
-                            "type": "Ext.form.field.Text",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "allowBlank": false,
-                                "blankText": "Enter your Username.",
-                                "fieldLabel": "Username",
-                                "labelAlign": "top",
-                                "margin": "0 0 10 0",
-                                "msgTarget": "title",
-                                "name": "username",
-                                "regexText": "Enter your username.",
-                                "width": 300
-                            },
-                            "configAlternates": {
-                                "allowBlank": "boolean",
-                                "blankText": "string",
-                                "fieldLabel": "string",
-                                "margin": "auto",
-                                "msgTarget": "string",
-                                "name": "string",
-                                "regexText": "string",
-                                "width": "auto",
-                                "layout|region": "string",
-                                "labelAlign": "string"
-                            },
-                            "name": "MyTextField",
-                            "designerId": "e8b40321-2cc1-4d68-829b-6a070d777f68"
-                        },
-                        {
-                            "type": "Ext.form.field.Text",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "allowBlank": false,
-                                "blankText": "Enter your password.",
-                                "fieldLabel": "Password",
-                                "inputType": "password",
-                                "labelAlign": "top",
-                                "margin": "0 0 10 0",
-                                "msgTarget": "title",
-                                "name": "password",
-                                "width": 300
-                            },
-                            "configAlternates": {
-                                "allowBlank": "boolean",
-                                "blankText": "string",
-                                "fieldLabel": "string",
-                                "inputType": "string",
-                                "margin": "auto",
-                                "msgTarget": "string",
-                                "name": "string",
-                                "width": "auto",
-                                "height": "auto",
-                                "layout|region": "string",
-                                "labelAlign": "string"
-                            },
-                            "name": "MyTextField1",
-                            "designerId": "c5d89fa0-3a6d-4d3c-a297-f06afe08acb1"
-                        },
-                        {
-                            "type": "Ext.button.Button",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "formBind": true,
-                                "itemId": null,
-                                "margin": "0 15 0 0",
-                                "scale": "large",
-                                "text": "Login",
-                                "width": 200
-                            },
-                            "configAlternates": {
-                                "formBind": "boolean",
-                                "itemId": "string",
-                                "margin": "auto",
-                                "scale": "string",
-                                "text": "string",
-                                "height": "auto",
-                                "layout|region": "string",
+                                "flex": "number",
+                                "layout|flex": "number",
                                 "width": "auto"
                             },
-                            "name": "MyButton3",
-                            "designerId": "9af0216d-2802-4945-9440-5a456ca73d0e",
+                            "name": "MyToolbar7",
+                            "designerId": "d843954f-4daf-453c-8048-94f8fe193722"
+                        },
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "stretchmax",
+                                "designer|displayName": "tengah",
+                                "flex": 5,
+                                "height": "100px",
+                                "layout": "vbox",
+                                "layout|flex": 1,
+                                "margin": "0 0 0 100"
+                            },
+                            "configAlternates": {
+                                "container|align": "string",
+                                "flex": "number",
+                                "layout": "string",
+                                "layout|flex": "number",
+                                "designer|displayName": "string",
+                                "margin": "auto",
+                                "height": "auto"
+                            },
+                            "name": "MyPanel5",
+                            "designerId": "5bae83cb-5c85-43b6-8a7f-4d30d9286eaa",
                             "cn": [
                                 {
-                                    "type": "viewcontrollereventbinding",
+                                    "type": "Ext.toolbar.Toolbar",
                                     "reference": {
-                                        "name": "listeners",
+                                        "name": "dockedItems",
                                         "type": "array"
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "fn": "onLoginButtonClick",
-                                        "implHandler": [
-                                            "var view = this.getView(),",
-                                            "    me = this,",
-                                            "    form = button.up('form'),",
-                                            "    formWindow = button.up('window'),",
-                                            "    values = form.getValues();",
-                                            "",
-                                            "//Jika Berhasil mengirim data (Success)",
-                                            "",
-                                            "    ",
-                                            "var sukses = function(response){",
-                                            "    var data = Ext.decode(response.responseText);",
-                                            "       console.log(data.success.token);",
-                                            "    if(data.success.token){",
-                                            "         view.destroy();",
-                                            "        Ext.widget('menu');",
-                                            "    }",
-                                            "};",
-                                            "",
-                                            "//jika salah mengirim data (Error)",
-                                            "var gagal = function(resp, ops) {",
-                                            "    Ext.Msg.alert('Login gagal','Username atau Password salah !');",
-                                            "",
-                                            "};",
-                                            "",
-                                            "",
-                                            "",
-                                            "",
-                                            "",
-                                            "Ext.Ajax.request({",
-                                            "    url: \"http://192.168.88.22:8000/api/login\",",
-                                            "    params: values,",
-                                            "    method: 'POST',",
-                                            "    cors: true,",
-                                            "    useDefaultXhrHeader:false,",
-                                            "    success: sukses,",
-                                            "    failure: gagal",
-                                            "",
-                                            "    ",
-                                            "});",
-                                            "",
-                                            ""
-                                        ],
-                                        "name": "click",
-                                        "scope": "me"
+                                        "designer|displayName": "header",
+                                        "dock": "top",
+                                        "height": 84,
+                                        "layout|flex": null
                                     },
                                     "configAlternates": {
-                                        "fn": "string",
-                                        "implHandler": "code",
-                                        "name": "string",
-                                        "scope": "string"
+                                        "layout|flex": "number",
+                                        "designer|displayName": "string",
+                                        "dock": "string",
+                                        "height": "auto"
                                     },
-                                    "name": "onLoginButtonClick",
-                                    "designerId": "c1d04818-1800-4d0f-aba8-385a64214bbe"
+                                    "name": "MyToolbar12",
+                                    "designerId": "6cf7bccc-a73c-4fa6-9790-3b6b009822f6",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.form.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "header",
+                                                "dock": null,
+                                                "height": 10,
+                                                "html": "<font size=\"10pt\"><b>Sign In</b></font>",
+                                                "layout|flex": null,
+                                                "margin": "3 0 0 0",
+                                                "width": 188
+                                            },
+                                            "configAlternates": {
+                                                "dock": "string",
+                                                "height": "auto",
+                                                "html": "string",
+                                                "layout|flex": "number",
+                                                "margin": "auto",
+                                                "width": "auto",
+                                                "designer|displayName": "string"
+                                            },
+                                            "name": "MyLabel4",
+                                            "designerId": "b5cdf881-6bd1-4a60-bc75-98102512f642"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.form.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "bodyPadding": 20,
+                                        "border": false,
+                                        "flex": null,
+                                        "height": 344,
+                                        "itemId": null,
+                                        "jsonSubmit": false,
+                                        "layout": "auto",
+                                        "maxHeight": null,
+                                        "width": 525
+                                    },
+                                    "configAlternates": {
+                                        "bodyPadding": "auto",
+                                        "height": "auto",
+                                        "itemId": "string",
+                                        "margin": "auto",
+                                        "title": "string",
+                                        "titleAlign": "string",
+                                        "layout": "string",
+                                        "width": "auto",
+                                        "border": "boolean",
+                                        "maxHeight": "number",
+                                        "layout|flex": "number",
+                                        "dock": "string",
+                                        "flex": "number",
+                                        "jsonSubmit": "boolean"
+                                    },
+                                    "name": "MyForm",
+                                    "designerId": "2336de74-0c11-4415-bc79-f1e81d459e50",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.toolbar.Toolbar",
+                                            "reference": {
+                                                "name": "dockedItems",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "dock": "top",
+                                                "width": "100%"
+                                            },
+                                            "configAlternates": {
+                                                "dock": "string",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyToolbar15",
+                                            "designerId": "3707fdcf-e7a7-4cb3-bf78-f8d43ef367ab",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.form.Label",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "html": "<font size=\"3pt\" color=\"#A2A0A0\"><b>Username</b></font>",
+                                                        "layout|flex": null,
+                                                        "margin": "0 0 0 10"
+                                                    },
+                                                    "configAlternates": {
+                                                        "html": "string",
+                                                        "layout|flex": "number",
+                                                        "margin": "auto"
+                                                    },
+                                                    "name": "MyLabel5",
+                                                    "designerId": "978427c6-dfef-4d60-a615-77ee0bd718aa"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.toolbar.Toolbar",
+                                            "reference": {
+                                                "name": "dockedItems",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "dock": "top",
+                                                "width": "100%"
+                                            },
+                                            "configAlternates": {
+                                                "dock": "string",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyToolbar19",
+                                            "designerId": "9eb1e90e-6ee2-4bd9-9cb4-92c3d2723c99",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.form.field.Text",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "allowBlank": false,
+                                                        "blankText": "Enter your Username.",
+                                                        "height": 40,
+                                                        "labelAlign": "top",
+                                                        "layout|flex": null,
+                                                        "margin": "0 0 0 10",
+                                                        "msgTarget": "title",
+                                                        "name": "username",
+                                                        "regexText": "Enter your username.",
+                                                        "width": 500
+                                                    },
+                                                    "configAlternates": {
+                                                        "allowBlank": "boolean",
+                                                        "blankText": "string",
+                                                        "fieldLabel": "string",
+                                                        "margin": "auto",
+                                                        "msgTarget": "string",
+                                                        "name": "string",
+                                                        "regexText": "string",
+                                                        "width": "auto",
+                                                        "layout|region": "string",
+                                                        "labelAlign": "string",
+                                                        "height": "auto",
+                                                        "layout|flex": "number"
+                                                    },
+                                                    "name": "MyTextField",
+                                                    "designerId": "857ea202-d7c1-4499-9361-2fbbfb62429d",
+                                                    "customConfigs": [
+                                                        {
+                                                            "group": "(Custom Properties)",
+                                                            "name": "mar",
+                                                            "type": "string"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.toolbar.Toolbar",
+                                            "reference": {
+                                                "name": "dockedItems",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "dock": "top",
+                                                "margin": "20 0 0 0",
+                                                "width": "100%"
+                                            },
+                                            "configAlternates": {
+                                                "dock": "string",
+                                                "width": "auto",
+                                                "margin": "auto"
+                                            },
+                                            "name": "MyToolbar18",
+                                            "designerId": "163686a2-be3d-4b80-a8c6-41b0173fa32b",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.form.Label",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "html": "<font size=\"3pt\" color=\"#A2A0A0\"><b>Password</b></font>",
+                                                        "layout|flex": null,
+                                                        "margin": "0 0 0 10"
+                                                    },
+                                                    "configAlternates": {
+                                                        "html": "string",
+                                                        "layout|flex": "number",
+                                                        "margin": "auto"
+                                                    },
+                                                    "name": "MyLabel7",
+                                                    "designerId": "40c368d2-74c2-4c88-8c89-cfcf866fc1cd"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.toolbar.Toolbar",
+                                            "reference": {
+                                                "name": "dockedItems",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "dock": "top",
+                                                "height": 55,
+                                                "width": 200
+                                            },
+                                            "configAlternates": {
+                                                "dock": "string",
+                                                "height": "auto",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyToolbar16",
+                                            "designerId": "ee7ab659-5414-4ab4-8762-1e40c9514168",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.form.field.Text",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "allowBlank": false,
+                                                        "blankText": "Enter your password.",
+                                                        "height": 40,
+                                                        "inputType": "password",
+                                                        "labelAlign": "top",
+                                                        "layout|flex": null,
+                                                        "margin": "0 0 0 10",
+                                                        "msgTarget": "title",
+                                                        "name": "password",
+                                                        "width": 500
+                                                    },
+                                                    "configAlternates": {
+                                                        "allowBlank": "boolean",
+                                                        "blankText": "string",
+                                                        "fieldLabel": "string",
+                                                        "inputType": "string",
+                                                        "margin": "auto",
+                                                        "msgTarget": "string",
+                                                        "name": "string",
+                                                        "width": "auto",
+                                                        "height": "auto",
+                                                        "layout|region": "string",
+                                                        "labelAlign": "string",
+                                                        "layout|flex": "number"
+                                                    },
+                                                    "name": "MyTextField1",
+                                                    "designerId": "c5d89fa0-3a6d-4d3c-a297-f06afe08acb1"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "formBind": true,
+                                                "itemId": null,
+                                                "scale": "large",
+                                                "text": "Login",
+                                                "width": 160
+                                            },
+                                            "configAlternates": {
+                                                "formBind": "boolean",
+                                                "itemId": "string",
+                                                "margin": "auto",
+                                                "scale": "string",
+                                                "text": "string",
+                                                "height": "auto",
+                                                "layout|region": "string",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyButton3",
+                                            "designerId": "1eded3b7-ba36-44c8-99e1-2709fdbd6834",
+                                            "cn": [
+                                                {
+                                                    "type": "viewcontrollereventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onLoginButtonClick",
+                                                        "implHandler": [
+                                                            "var view = this.getView(),",
+                                                            "    me = this,",
+                                                            "    form = button.up('form'),",
+                                                            "    formWindow = button.up('window'),",
+                                                            "    values = form.getValues();",
+                                                            "",
+                                                            "//Jika Berhasil mengirim data (Success)",
+                                                            "",
+                                                            "",
+                                                            "var sukses = function(response){",
+                                                            "    var data = Ext.decode(response.responseText);",
+                                                            "       console.log(data.success.token);",
+                                                            "    if(data.success.token){",
+                                                            "         view.destroy();",
+                                                            "        Ext.widget('menu');",
+                                                            "    }",
+                                                            "};",
+                                                            "",
+                                                            "//jika salah mengirim data (Error)",
+                                                            "var gagal = function(resp, ops) {",
+                                                            "    Ext.Msg.alert('Login gagal','Username atau Password salah !');",
+                                                            "",
+                                                            "};",
+                                                            "",
+                                                            "",
+                                                            "",
+                                                            "",
+                                                            "",
+                                                            "Ext.Ajax.request({",
+                                                            "    url: \"http://192.168.88.22:8000/api/login\",",
+                                                            "    params: values,",
+                                                            "    method: 'POST',",
+                                                            "    cors: true,",
+                                                            "    useDefaultXhrHeader:false,",
+                                                            "    success: sukses,",
+                                                            "    failure: gagal",
+                                                            "",
+                                                            "",
+                                                            "});",
+                                                            "",
+                                                            ""
+                                                        ],
+                                                        "name": "click",
+                                                        "scope": "me"
+                                                    },
+                                                    "configAlternates": {
+                                                        "fn": "string",
+                                                        "implHandler": "code",
+                                                        "name": "string",
+                                                        "scope": "string"
+                                                    },
+                                                    "name": "onLoginButtonClick",
+                                                    "designerId": "c1d04818-1800-4d0f-aba8-385a64214bbe"
+                                                }
+                                            ]
+                                        }
+                                    ]
                                 }
                             ]
                         }

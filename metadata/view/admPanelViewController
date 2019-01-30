@@ -6,12 +6,12 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userAlias": "mypanel1",
-        "designer|userClassName": "AdmissionViewController"
+        "designer|userAlias": "admpanel",
+        "designer|userClassName": "admPanelViewController"
     },
     "configAlternates": {
         "designer|userAlias": "string",
         "designer|userClassName": "string"
     },
-    "designerId": "7d902345-a778-4c63-b177-ba18c677bf65"
+    "designerId": "7e314ef0-9962-4635-9db1-e6a6ee3298f0"
 }

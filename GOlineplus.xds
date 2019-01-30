@@ -14,7 +14,7 @@
                 "width": 1280
             }
         },
-        "urlPrefix": "http://localhost:52139/",
+        "urlPrefix": "http://localhost:50294/",
         "exportPath": "",
         "lockUrlPrefix": true,
         "buildShouldOverwriteIndex": true,
@@ -40,22 +40,30 @@
             "ab2d3408-b1de-4ecb-821b-e262238a2ca1",
             "b48d28ce-4e15-4048-8588-3f5694f73e12",
             "13528550-319e-41be-8d8f-e52218a42bda",
-            "bf80c907-2e35-4d2b-b3f5-66ada4406020",
-            "8dd210e6-2df3-44a7-a2d0-f9ae1e053190",
-            "7d902345-a778-4c63-b177-ba18c677bf65",
             "305c2af3-dbbf-4617-b03d-06d4f0856456",
-            "b0669949-1333-4631-9154-eb604c1e3ca1",
-            "8618eea7-a9fa-45e6-a591-be92c4c181c3",
-            "f7dd1f44-952d-4cef-9009-65ac65df3487",
-            "0c92c5a2-e615-430e-a468-847639ce034d",
+            "6cdf5def-8057-4083-82d6-688e62ba2965",
             "7f67b87e-911e-4efa-b6d0-1974d21d6965",
-            "ee7b8cbd-f561-4176-9849-2fb8d2552216"
+            "9b44a579-8fb0-4ce3-9d06-4ec7be6bcce0",
+            "ee7b8cbd-f561-4176-9849-2fb8d2552216",
+            "f38e6ee1-0f30-492e-96fa-a4977fe50e30",
+            "47405e8f-c051-4bc2-b546-82befb91e090",
+            "3b0109b8-4011-4d3d-b2a8-4dc14c3f334c",
+            "c398a19a-339a-41eb-a91c-2476965e0790",
+            "4d7f924c-5aff-4f4b-a522-59a861e39f2c",
+            "a4dc9370-638b-4920-a5d6-911661bf73b0",
+            "af23366c-d798-4ed5-8142-f9525e4cca90",
+            "7e314ef0-9962-4635-9db1-e6a6ee3298f0",
+            "058bc8fa-a59f-4b97-983b-7654eb2280d5",
+            "ca0151eb-7d00-4be0-9883-4ed9badc4864",
+            "2d326435-9b1f-4420-9f49-ebbd37c8a18a"
         ],
         "store": [],
         "controller": [],
-        "model": [],
+        "model": [
+            "52af1058-d265-48e9-a805-558bd1ca61c7"
+        ],
         "resource": [
-            "510a905f-c515-491f-b75a-80b913c71fe6",
+            "b002b2f2-379d-42c4-a886-60f4a9eaaa85",
             "21d39171-39d0-4171-bbaf-901980656599",
             "b831a3ac-97b7-4d23-8d49-f6f6930fc53a",
             "722f4125-dc8c-41da-afe5-912088951d2a"

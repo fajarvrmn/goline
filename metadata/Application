@@ -6,6 +6,9 @@
     },
     "codeClass": null,
     "userConfig": {
+        "models": [
+            "Unitpelayanann"
+        ],
         "name": "GOlineplus",
         "requires": [
             "Ext.window.MessageBox"
@@ -13,14 +16,19 @@
         "views": [
             "Menu",
             "LoginForm",
-            "Admission",
-            "FormRawJal"
+            "FormRawJal",
+            "UnitPelayananWindow",
+            "ADM",
+            "admPanel",
+            "FormRawJal3",
+            "FormRawJal1"
         ]
     },
     "configAlternates": {
         "name": "string",
         "requires": "typedarray",
-        "views": "typedarray"
+        "views": "typedarray",
+        "models": "typedarray"
     },
     "name": "Application",
     "designerId": "application"

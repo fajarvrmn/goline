@@ -1,0 +1,168 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "bodyBorder": false,
+        "border": false,
+        "designer|userAlias": "unitpelayananwindow",
+        "designer|userClassName": "UnitPelayananWindow",
+        "title": "Unit Pelayanan",
+        "width": "40%"
+    },
+    "configAlternates": {
+        "bodyBorder": "boolean",
+        "border": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "title": "string",
+        "width": "auto"
+    },
+    "name": "MyWindow",
+    "designerId": "47405e8f-c051-4bc2-b546-82befb91e090",
+    "viewControllerInstanceId": "c398a19a-339a-41eb-a91c-2476965e0790",
+    "viewModelInstanceId": "3b0109b8-4011-4d3d-b2a8-4dc14c3f334c",
+    "cn": [
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "header",
+                "dock": "top",
+                "flex": 1,
+                "margin": "20 20 20 20"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "dock": "string",
+                "flex": "number",
+                "margin": "auto"
+            },
+            "name": "MyToolbar4",
+            "designerId": "304f3f7b-377c-4e3c-9810-400d4389fe2a",
+            "cn": [
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "flex": 1,
+                        "height": 35,
+                        "layout|flex": 1
+                    },
+                    "configAlternates": {
+                        "flex": "number",
+                        "height": "auto",
+                        "layout|flex": "number"
+                    },
+                    "name": "MyComboBox4",
+                    "designerId": "e66b33bf-0a62-4c0a-887a-792855cfeca2"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "flex": 3,
+                        "height": 35,
+                        "layout|flex": 1,
+                        "margin": "0 0 0 20"
+                    },
+                    "configAlternates": {
+                        "flex": "number",
+                        "height": "auto",
+                        "layout|flex": "number",
+                        "margin": "auto"
+                    },
+                    "name": "MyTextField13",
+                    "designerId": "8fb786d9-1f02-4a6c-bdff-2da2dfe90415"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "forceFit": true,
+                "margin": "0 20 35 25",
+                "reference": "list",
+                "resizable": false,
+                "scrollable": true,
+                "store": [
+                    "dataPoli"
+                ],
+                "title": ""
+            },
+            "configAlternates": {
+                "forceFit": "boolean",
+                "margin": "auto",
+                "reference": "string",
+                "resizable": "boolean",
+                "scrollable": "auto",
+                "title": "string",
+                "store": "binding"
+            },
+            "name": "MyGridPanel1",
+            "designerId": "dcc17dea-48a6-481d-9594-fa540d5c961c",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "dataIndex": "kodepoli",
+                        "text": "Kode"
+                    },
+                    "configAlternates": {
+                        "align": "string",
+                        "dataIndex": "datafield",
+                        "text": "string"
+                    },
+                    "name": "MyColumn1",
+                    "designerId": "3ed886fc-592a-488e-a5cb-ba947b652a8a"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "dataIndex": "namapoli",
+                        "text": "Bagian"
+                    },
+                    "configAlternates": {
+                        "align": "string",
+                        "dataIndex": "datafield",
+                        "text": "string"
+                    },
+                    "name": "MyColumn2",
+                    "designerId": "f7ec8717-4f6f-4959-8762-b4bda39c7bab"
+                }
+            ]
+        }
+    ]
+}

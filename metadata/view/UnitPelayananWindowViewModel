@@ -6,12 +6,12 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userAlias": "mypanel1",
-        "designer|userClassName": "AdmissionViewModel"
+        "designer|userAlias": "unitpelayananwindow",
+        "designer|userClassName": "UnitPelayananWindowViewModel"
     },
     "configAlternates": {
         "designer|userAlias": "string",
         "designer|userClassName": "string"
     },
-    "designerId": "8dd210e6-2df3-44a7-a2d0-f9ae1e053190"
+    "designerId": "3b0109b8-4011-4d3d-b2a8-4dc14c3f334c"
 }
