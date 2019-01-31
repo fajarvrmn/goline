@@ -23,6 +23,32 @@ Ext.define('GOlineplus.view.FormRawatJlnViewController', {
         win = Ext.create('widget.unitpelayananwindow');
 
         win.show();
+    },
+
+    onBtnDokterClick: function(button, e, eOpts) {
+        var a = this.getView();
+
+        a = Ext.create('widget.dokter');
+
+        a.show();
+    },
+
+    onBtnPekerjaClick: function(button, e, eOpts) {
+        var b = this.getView();
+
+        b = Ext.create('widget.pekerjaan');
+
+        b.show();
+    },
+
+    onButtonClick: function(button, e, eOpts) {
+        var form = button.up('form'),
+            values = form.getValues();
+
+
+        var value = form. getForm (). findField ("namapanggilan"). getValue ();
+        console.log(value);
+
     }
 
 });

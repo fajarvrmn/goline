@@ -6,13 +6,12 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userAlias": "formrawjal1",
-        "designer|userClassName": "FormRawatJlnViewController1"
+        "designer|userAlias": "dokter",
+        "designer|userClassName": "DokterViewController"
     },
     "configAlternates": {
         "designer|userAlias": "string",
         "designer|userClassName": "string"
     },
-    "name": "FormRawatJlnViewController1",
-    "designerId": "f38e6ee1-0f30-492e-96fa-a4977fe50e30"
+    "designerId": "04519cd1-d35f-474b-974e-2426d8de8d14"
 }

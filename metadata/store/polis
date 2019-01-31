@@ -1,0 +1,44 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "{[",
+            "",
+            "{\"kodepoli\":\"9120\",\"namapoli\":\"poli gigi dan mulut\"},",
+            "{\"kodepoli\":\"9146\",\"namapoli\":\"poli spesialis akupuntur\"},",
+            "{\"kodepoli\":\"9130\",\"namapoli\":\"poli spesialis anak\"},",
+            "{\"kodepoli\":\"9141\",\"namapoli\":\"poli spesialis bedah\"},",
+            "",
+            "]}"
+        ],
+        "designer|userAlias": "polis",
+        "designer|userClassName": "polis",
+        "model": "poli",
+        "storeId": "polis"
+    },
+    "configAlternates": {
+        "data": "array",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "model": "model",
+        "storeId": "string"
+    },
+    "designerId": "866fa01c-dfd2-4266-bcb9-7f6ecb939753",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Memory",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyMemoryProxy1",
+            "designerId": "ec8d7849-dc1a-47fb-934a-77b207395abf"
+        }
+    ]
+}

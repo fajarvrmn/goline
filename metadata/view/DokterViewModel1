@@ -6,13 +6,13 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userAlias": "formrawjal1",
-        "designer|userClassName": "FormRawatJlnViewModel1"
+        "designer|userAlias": "pekerjaan",
+        "designer|userClassName": "DokterViewModel1"
     },
     "configAlternates": {
         "designer|userAlias": "string",
         "designer|userClassName": "string"
     },
-    "name": "FormRawatJlnViewModel1",
-    "designerId": "9b44a579-8fb0-4ce3-9d06-4ec7be6bcce0"
+    "name": "DokterViewModel1",
+    "designerId": "a2169642-ab72-41ce-8291-e88d904d6430"
 }

@@ -14,7 +14,7 @@
                 "width": 1280
             }
         },
-        "urlPrefix": "http://localhost:50294/",
+        "urlPrefix": "http://localhost:54742/",
         "exportPath": "",
         "lockUrlPrefix": true,
         "buildShouldOverwriteIndex": true,
@@ -41,11 +41,8 @@
             "b48d28ce-4e15-4048-8588-3f5694f73e12",
             "13528550-319e-41be-8d8f-e52218a42bda",
             "305c2af3-dbbf-4617-b03d-06d4f0856456",
-            "6cdf5def-8057-4083-82d6-688e62ba2965",
             "7f67b87e-911e-4efa-b6d0-1974d21d6965",
-            "9b44a579-8fb0-4ce3-9d06-4ec7be6bcce0",
             "ee7b8cbd-f561-4176-9849-2fb8d2552216",
-            "f38e6ee1-0f30-492e-96fa-a4977fe50e30",
             "47405e8f-c051-4bc2-b546-82befb91e090",
             "3b0109b8-4011-4d3d-b2a8-4dc14c3f334c",
             "c398a19a-339a-41eb-a91c-2476965e0790",
@@ -53,17 +50,26 @@
             "a4dc9370-638b-4920-a5d6-911661bf73b0",
             "af23366c-d798-4ed5-8142-f9525e4cca90",
             "7e314ef0-9962-4635-9db1-e6a6ee3298f0",
-            "058bc8fa-a59f-4b97-983b-7654eb2280d5",
-            "ca0151eb-7d00-4be0-9883-4ed9badc4864",
-            "2d326435-9b1f-4420-9f49-ebbd37c8a18a"
+            "3c6c3136-2021-4b6d-999d-c11a4119f35c",
+            "79795251-3685-475c-ac72-91ceeb05d833",
+            "dbad5721-8225-4ec1-b7a3-4f9949eb186d",
+            "a2169642-ab72-41ce-8291-e88d904d6430",
+            "04519cd1-d35f-474b-974e-2426d8de8d14",
+            "0fc9e8dd-69d1-448f-8829-b588607dcb9f"
         ],
-        "store": [],
-        "controller": [],
+        "store": [
+            "866fa01c-dfd2-4266-bcb9-7f6ecb939753",
+            "39e70d3c-5d3b-4ece-b344-9a403a91cfab",
+            "5d6e617b-d27d-4ada-a289-cd0f25caaede"
+        ],
+        "controller": [
+            "8d3641aa-6dbd-4e35-83e4-101655e23d8c"
+        ],
         "model": [
-            "52af1058-d265-48e9-a805-558bd1ca61c7"
+            "f3f50df5-a987-417b-a971-68967b0d3d11"
         ],
         "resource": [
-            "b002b2f2-379d-42c4-a886-60f4a9eaaa85",
+            "bce5f535-69af-4386-86ad-d88245c2c11b",
             "21d39171-39d0-4171-bbaf-901980656599",
             "b831a3ac-97b7-4d23-8d49-f6f6930fc53a",
             "722f4125-dc8c-41da-afe5-912088951d2a"

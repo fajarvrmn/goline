@@ -19,8 +19,7 @@ Ext.define('GOlineplus.view.Menu', {
 
     requires: [
         'GOlineplus.view.MenuViewModel',
-        'GOlineplus.view.admPanel',
-        'GOlineplus.view.FormRawJal3',
+        'GOlineplus.view.MenuViewController',
         'Ext.Img',
         'Ext.toolbar.Toolbar',
         'Ext.container.ButtonGroup',
@@ -29,6 +28,7 @@ Ext.define('GOlineplus.view.Menu', {
         'Ext.form.field.Text'
     ],
 
+    controller: 'menu',
     viewModel: {
         type: 'menu'
     },
@@ -44,6 +44,7 @@ Ext.define('GOlineplus.view.Menu', {
             region: 'west',
             border: true,
             flex: 1.5,
+            itemId: 'menuPanel',
             margin: '0 1 0 0',
             scrollable: false,
             bodyBorder: false,
@@ -131,16 +132,146 @@ Ext.define('GOlineplus.view.Menu', {
                 {
                     xtype: 'panel',
                     height: 923,
+                    itemId: 'contentPanel',
                     scrollable: true,
                     title: 'My Panel',
                     items: [
                         {
-                            xtype: 'admpanel'
-                        },
-                        {
-                            xtype: 'formrawjal3',
-                            hidden: true,
-                            hideMode: 'visibility'
+                            xtype: 'panel',
+                            border: true,
+                            flex: 1,
+                            height: 'auto',
+                            itemId: 'admPanel',
+                            scrollable: true,
+                            layout: 'card',
+                            bodyBorder: true,
+                            dockedItems: [
+                                {
+                                    xtype: 'toolbar',
+                                    border: '1px',
+                                    dock: 'top',
+                                    items: [
+                                        {
+                                            xtype: 'buttongroup',
+                                            flex: 1,
+                                            frame: false,
+                                            margin: '50 0 0 20',
+                                            columns: 1,
+                                            items: [
+                                                {
+                                                    xtype: 'label',
+                                                    html: '<font size ="3pt"><b>Pendaftaran</b></font>'
+                                                },
+                                                {
+                                                    xtype: 'button',
+                                                    itemId: 'rawjalBtn',
+                                                    text: 'Rawat Jalan',
+                                                    textAlign: 'left',
+                                                    listeners: {
+                                                        click: 'onRawjalBtnClick'
+                                                    }
+                                                },
+                                                {
+                                                    xtype: 'button',
+                                                    text: 'Instalasi Gawat Darurat',
+                                                    textAlign: 'left'
+                                                },
+                                                {
+                                                    xtype: 'button',
+                                                    text: 'Rawat Inap',
+                                                    textAlign: 'left'
+                                                },
+                                                {
+                                                    xtype: 'button',
+                                                    text: 'Penunjang Medis',
+                                                    textAlign: 'left'
+                                                },
+                                                {
+                                                    xtype: 'button',
+                                                    text: 'Home Care',
+                                                    textAlign: 'left'
+                                                },
+                                                {
+                                                    xtype: 'button',
+                                                    text: 'Transaksi Non Pasien',
+                                                    textAlign: 'left'
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            xtype: 'buttongroup',
+                                            flex: 2,
+                                            frame: false,
+                                            height: 202,
+                                            margin: '0 0 0 20',
+                                            bodyBorder: false,
+                                            columns: 1,
+                                            items: [
+                                                {
+                                                    xtype: 'label',
+                                                    html: '<font size ="3pt"><b>Booking</b></font>'
+                                                },
+                                                {
+                                                    xtype: 'button',
+                                                    text: 'Pendaftaran Rawat Jalan',
+                                                    textAlign: 'left'
+                                                },
+                                                {
+                                                    xtype: 'button',
+                                                    text: 'Kamar',
+                                                    textAlign: 'left'
+                                                },
+                                                {
+                                                    xtype: 'button',
+                                                    text: 'Pencatatan Rujukan Pasien',
+                                                    textAlign: 'left'
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    xtype: 'toolbar',
+                                    border: '1px',
+                                    dock: 'top',
+                                    margin: '0,5 0 0 0',
+                                    items: [
+                                        {
+                                            xtype: 'buttongroup',
+                                            flex: 1,
+                                            frame: false,
+                                            margin: '50 0 0 20',
+                                            columns: 1,
+                                            items: [
+                                                {
+                                                    xtype: 'label',
+                                                    html: '<font size ="3pt"><b>Lainnya</b></font>'
+                                                },
+                                                {
+                                                    xtype: 'button',
+                                                    text: 'Peminjaman Buku Status',
+                                                    textAlign: 'left'
+                                                },
+                                                {
+                                                    xtype: 'button',
+                                                    text: 'Pengembalian Buku Status',
+                                                    textAlign: 'left'
+                                                },
+                                                {
+                                                    xtype: 'button',
+                                                    text: 'Tracking Berkas Poliklinik',
+                                                    textAlign: 'left'
+                                                },
+                                                {
+                                                    xtype: 'button',
+                                                    text: 'Tracking Berkas Rawat Inap',
+                                                    textAlign: 'left'
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 }

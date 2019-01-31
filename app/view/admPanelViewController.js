@@ -18,21 +18,7 @@ Ext.define('GOlineplus.view.admPanelViewController', {
     alias: 'controller.admpanel',
 
     onRawjalBtnClick: function(button, e, eOpts) {
-        this.getView('Ext.widget.admpanel').hide();
-
-
-
-
-        // console.log(this.getView('widget.formrawjal3').show());
-
-
-
-        var win = this.getComp();
-
-        win = Ext.create('widget.formrawjal1');
-
-        win.show();
-
+        location.hash = "rawatPanel";
     }
 
 });

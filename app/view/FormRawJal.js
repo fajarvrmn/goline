@@ -20,8 +20,8 @@ Ext.define('GOlineplus.view.FormRawJal', {
     requires: [
         'GOlineplus.view.FormRawatJlnViewModel',
         'GOlineplus.view.FormRawatJlnViewController',
+        'Ext.form.Panel',
         'Ext.toolbar.Toolbar',
-        'Ext.panel.Panel',
         'Ext.form.Label',
         'Ext.form.RadioGroup',
         'Ext.form.field.Radio',
@@ -36,16 +36,21 @@ Ext.define('GOlineplus.view.FormRawJal', {
     viewModel: {
         type: 'formrawjal'
     },
-    layout: 'card',
+    itemId: 'rawatPanel',
+    scrollable: true,
 
     items: [
         {
-            xtype: 'container',
-            scrollable: true,
-            items: [
+            xtype: 'form',
+            margin: '25 25 25 25',
+            layout: 'auto',
+            bodyPadding: 10,
+            title: 'My Form',
+            dockedItems: [
                 {
                     xtype: 'toolbar',
                     border: '1px',
+                    dock: 'top',
                     height: 'auto',
                     margin: '50 50 50 50',
                     items: [
@@ -106,7 +111,8 @@ Ext.define('GOlineplus.view.FormRawJal', {
                                             xtype: 'textfield',
                                             height: 35,
                                             margin: '0 15 0 10',
-                                            width: 350
+                                            width: 350,
+                                            name: 'unit'
                                         },
                                         {
                                             xtype: 'button',
@@ -134,6 +140,7 @@ Ext.define('GOlineplus.view.FormRawJal', {
                                             height: 35,
                                             margin: '0 0 0 10',
                                             width: 150,
+                                            name: 'waktu',
                                             queryMode: 'local',
                                             store: [
                                                 'PAGI',
@@ -163,7 +170,10 @@ Ext.define('GOlineplus.view.FormRawJal', {
                                         {
                                             xtype: 'button',
                                             height: 35,
-                                            width: 35
+                                            width: 35,
+                                            listeners: {
+                                                click: 'onBtnDokterClick'
+                                            }
                                         }
                                     ]
                                 },
@@ -403,6 +413,7 @@ Ext.define('GOlineplus.view.FormRawJal', {
                 {
                     xtype: 'toolbar',
                     border: '1px',
+                    dock: 'top',
                     height: 'auto',
                     margin: '50 50 50 50',
                     items: [
@@ -468,7 +479,9 @@ Ext.define('GOlineplus.view.FormRawJal', {
                                         {
                                             xtype: 'textfield',
                                             height: 35,
-                                            width: 400
+                                            itemId: 'namapanggilan',
+                                            width: 400,
+                                            name: 'namapanggilan'
                                         }
                                     ]
                                 },
@@ -698,7 +711,10 @@ Ext.define('GOlineplus.view.FormRawJal', {
                                         {
                                             xtype: 'button',
                                             height: 35,
-                                            width: 35
+                                            width: 35,
+                                            listeners: {
+                                                click: 'onBtnPekerjaClick'
+                                            }
                                         }
                                     ]
                                 },
@@ -745,6 +761,7 @@ Ext.define('GOlineplus.view.FormRawJal', {
                 {
                     xtype: 'toolbar',
                     border: '1px',
+                    dock: 'top',
                     height: 'auto',
                     margin: '50 50 50 50',
                     items: [
@@ -991,6 +1008,7 @@ Ext.define('GOlineplus.view.FormRawJal', {
                 {
                     xtype: 'toolbar',
                     border: '1px',
+                    dock: 'top',
                     height: 'auto',
                     margin: '50 50 50 50',
                     items: [
@@ -1242,6 +1260,7 @@ Ext.define('GOlineplus.view.FormRawJal', {
                 {
                     xtype: 'toolbar',
                     border: '1px',
+                    dock: 'top',
                     height: 'auto',
                     margin: '50 50 50 50',
                     items: [
@@ -1429,6 +1448,7 @@ Ext.define('GOlineplus.view.FormRawJal', {
                 {
                     xtype: 'toolbar',
                     border: '1px',
+                    dock: 'top',
                     height: 'auto',
                     margin: '50 50 50 50',
                     items: [
@@ -1649,6 +1669,7 @@ Ext.define('GOlineplus.view.FormRawJal', {
                 {
                     xtype: 'toolbar',
                     border: '1px',
+                    dock: 'top',
                     height: 95,
                     items: [
                         {
@@ -1677,7 +1698,10 @@ Ext.define('GOlineplus.view.FormRawJal', {
                                     xtype: 'button',
                                     height: 50,
                                     width: 120,
-                                    text: '<font color="#ffffff" size="3pt"><b>Proses</b></font>'
+                                    text: '<font color="#ffffff" size="3pt"><b>Proses</b></font>',
+                                    listeners: {
+                                        click: 'onButtonClick'
+                                    }
                                 },
                                 {
                                     xtype: 'button',

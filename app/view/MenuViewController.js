@@ -15,5 +15,10 @@
 
 Ext.define('GOlineplus.view.MenuViewController', {
     extend: 'Ext.app.ViewController',
-    alias: 'controller.menu'
+    alias: 'controller.menu',
+
+    onRawjalBtnClick: function(button, e, eOpts) {
+        location.hash = "rawatPanel";
+    }
+
 });

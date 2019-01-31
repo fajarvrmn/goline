@@ -33,7 +33,7 @@ Ext.define('GOlineplus.view.admPanel', {
     border: true,
     flex: 1,
     height: 'auto',
-    itemId: 'adm',
+    itemId: 'admPanel',
     scrollable: true,
     layout: 'card',
     bodyBorder: true,

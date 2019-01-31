@@ -6,15 +6,19 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|initialView": true,
         "designer|userAlias": "formrawjal",
         "designer|userClassName": "FormRawJal",
-        "layout": "card"
+        "itemId": "rawatPanel",
+        "scrollable": true
     },
     "configAlternates": {
         "designer|userAlias": "string",
         "designer|userClassName": "string",
         "layout": "string",
-        "designer|initialView": "boolean"
+        "designer|initialView": "boolean",
+        "itemId": "string",
+        "scrollable": "auto"
     },
     "name": "MyPanel",
     "designerId": "305c2af3-dbbf-4617-b03d-06d4f0856456",
@@ -22,32 +26,40 @@
     "viewModelInstanceId": "7f67b87e-911e-4efa-b6d0-1974d21d6965",
     "cn": [
         {
-            "type": "Ext.container.Container",
+            "type": "Ext.form.Panel",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "scrollable": true
+                "bodyPadding": 10,
+                "designer|displayName": "MyForm",
+                "layout": "auto",
+                "margin": "25 25 25 25",
+                "title": "My Form"
             },
             "configAlternates": {
+                "bodyPadding": "auto",
+                "designer|displayName": "string",
                 "layout": "string",
-                "scrollable": "auto"
+                "margin": "auto",
+                "title": "string"
             },
-            "name": "MyContainer",
-            "designerId": "bac6a2b0-df22-4d36-b567-1f01ac80dc61",
+            "name": "MyForm1",
+            "designerId": "6a2960d3-c4b3-4616-b102-519f5c2087c0",
             "cn": [
                 {
                     "type": "Ext.toolbar.Toolbar",
                     "reference": {
-                        "name": "items",
+                        "name": "dockedItems",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
                         "border": "1px",
                         "designer|displayName": "Form Jenis Pasien",
+                        "dock": "top",
                         "height": "auto",
                         "margin": "50 50 50 50"
                     },
@@ -55,7 +67,8 @@
                         "border": "auto",
                         "height": "auto",
                         "margin": "auto",
-                        "designer|displayName": "string"
+                        "designer|displayName": "string",
+                        "dock": "string"
                     },
                     "name": "MyToolbar6",
                     "designerId": "c1e57c37-5ee9-4018-a637-d37589c1e3c2",
@@ -269,13 +282,15 @@
                                                 "height": 35,
                                                 "layout|flex": null,
                                                 "margin": "0 15 0 10",
+                                                "name": "unit",
                                                 "width": 350
                                             },
                                             "configAlternates": {
                                                 "height": "auto",
                                                 "layout|flex": "number",
                                                 "margin": "auto",
-                                                "width": "auto"
+                                                "width": "auto",
+                                                "name": "string"
                                             },
                                             "name": "MyTextField4",
                                             "designerId": "698497ec-0e27-4854-aa0c-fd2ad4956efe"
@@ -391,6 +406,7 @@
                                                 "height": 35,
                                                 "layout|flex": null,
                                                 "margin": "0 0 0 10",
+                                                "name": "waktu",
                                                 "queryMode": "local",
                                                 "store": [
                                                     "['PAGI', 'SIANG', 'SORE']"
@@ -404,7 +420,8 @@
                                                 "height": "auto",
                                                 "margin": "auto",
                                                 "width": "auto",
-                                                "queryMode": "string"
+                                                "queryMode": "string",
+                                                "name": "string"
                                             },
                                             "name": "MyComboBox",
                                             "designerId": "6b62b055-ed58-40c6-919b-bbe0fc51fb66"
@@ -497,7 +514,37 @@
                                                 "width": "auto"
                                             },
                                             "name": "MyButton4",
-                                            "designerId": "8e3b2677-70f7-4002-9824-b9e0977d4947"
+                                            "designerId": "8e3b2677-70f7-4002-9824-b9e0977d4947",
+                                            "cn": [
+                                                {
+                                                    "type": "viewcontrollereventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onBtnDokterClick",
+                                                        "implHandler": [
+                                                            "var a = this.getView();",
+                                                            "",
+                                                            "a = Ext.create('widget.dokter');",
+                                                            "",
+                                                            "a.show();"
+                                                        ],
+                                                        "name": "click",
+                                                        "scope": "me"
+                                                    },
+                                                    "configAlternates": {
+                                                        "fn": "string",
+                                                        "implHandler": "code",
+                                                        "name": "string",
+                                                        "scope": "string"
+                                                    },
+                                                    "name": "onBtnDokterClick",
+                                                    "designerId": "4ce10d42-a62c-4f0a-8b95-2b9090eba41b"
+                                                }
+                                            ]
                                         }
                                     ]
                                 },
@@ -1338,13 +1385,14 @@
                 {
                     "type": "Ext.toolbar.Toolbar",
                     "reference": {
-                        "name": "items",
+                        "name": "dockedItems",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
                         "border": "1px",
                         "designer|displayName": "Form Data Pasien",
+                        "dock": "top",
                         "height": "auto",
                         "margin": "50 50 50 50"
                     },
@@ -1352,7 +1400,8 @@
                         "border": "auto",
                         "height": "auto",
                         "margin": "auto",
-                        "designer|displayName": "string"
+                        "designer|displayName": "string",
+                        "dock": "string"
                     },
                     "name": "MyToolbar36",
                     "designerId": "c5a18864-643e-4e33-9fb2-2b110cdf334b",
@@ -1576,14 +1625,18 @@
                                             "codeClass": null,
                                             "userConfig": {
                                                 "height": 35,
+                                                "itemId": "namapanggilan",
                                                 "layout|flex": null,
+                                                "name": "namapanggilan",
                                                 "width": 400
                                             },
                                             "configAlternates": {
                                                 "height": "auto",
                                                 "layout|flex": "number",
                                                 "margin": "auto",
-                                                "width": "auto"
+                                                "width": "auto",
+                                                "itemId": "string",
+                                                "name": "string"
                                             },
                                             "name": "MyTextField6",
                                             "designerId": "0a91a791-84d1-456d-84b3-799194e0da7a"
@@ -2442,7 +2495,37 @@
                                                 "width": "auto"
                                             },
                                             "name": "MyButton4",
-                                            "designerId": "1751fcd3-54cc-4759-b486-679c9fff54ad"
+                                            "designerId": "1751fcd3-54cc-4759-b486-679c9fff54ad",
+                                            "cn": [
+                                                {
+                                                    "type": "viewcontrollereventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onBtnPekerjaClick",
+                                                        "implHandler": [
+                                                            "var b = this.getView();",
+                                                            "",
+                                                            "b = Ext.create('widget.pekerjaan');",
+                                                            "",
+                                                            "b.show();"
+                                                        ],
+                                                        "name": "click",
+                                                        "scope": "me"
+                                                    },
+                                                    "configAlternates": {
+                                                        "fn": "string",
+                                                        "implHandler": "code",
+                                                        "name": "string",
+                                                        "scope": "string"
+                                                    },
+                                                    "name": "onBtnPekerjaClick",
+                                                    "designerId": "9ac22542-6eeb-47c7-9405-04e6f2ed6ba8"
+                                                }
+                                            ]
                                         }
                                     ]
                                 },
@@ -2591,13 +2674,14 @@
                 {
                     "type": "Ext.toolbar.Toolbar",
                     "reference": {
-                        "name": "items",
+                        "name": "dockedItems",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
                         "border": "1px",
                         "designer|displayName": "Form Data Alamat",
+                        "dock": "top",
                         "height": "auto",
                         "margin": "50 50 50 50"
                     },
@@ -2605,7 +2689,8 @@
                         "border": "auto",
                         "height": "auto",
                         "margin": "auto",
-                        "designer|displayName": "string"
+                        "designer|displayName": "string",
+                        "dock": "string"
                     },
                     "name": "MyToolbar50",
                     "designerId": "e0df4381-4ed3-478c-9f0a-a328ab20a417",
@@ -3481,13 +3566,14 @@
                 {
                     "type": "Ext.toolbar.Toolbar",
                     "reference": {
-                        "name": "items",
+                        "name": "dockedItems",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
                         "border": "1px",
                         "designer|displayName": "Form Data penanggung jawab",
+                        "dock": "top",
                         "height": "auto",
                         "margin": "50 50 50 50"
                     },
@@ -3495,7 +3581,8 @@
                         "border": "auto",
                         "height": "auto",
                         "margin": "auto",
-                        "designer|displayName": "string"
+                        "designer|displayName": "string",
+                        "dock": "string"
                     },
                     "name": "MyToolbar55",
                     "designerId": "6db7e2f0-cc0e-4b4a-9fb9-8d436177de1a",
@@ -4385,13 +4472,14 @@
                 {
                     "type": "Ext.toolbar.Toolbar",
                     "reference": {
-                        "name": "items",
+                        "name": "dockedItems",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
                         "border": "1px",
                         "designer|displayName": "Form Data BPJS",
+                        "dock": "top",
                         "height": "auto",
                         "margin": "50 50 50 50"
                     },
@@ -4399,7 +4487,8 @@
                         "border": "auto",
                         "height": "auto",
                         "margin": "auto",
-                        "designer|displayName": "string"
+                        "designer|displayName": "string",
+                        "dock": "string"
                     },
                     "name": "MyToolbar61",
                     "designerId": "d416ea03-9348-4711-b6a8-5dd8eb7ffe31",
@@ -5039,13 +5128,14 @@
                 {
                     "type": "Ext.toolbar.Toolbar",
                     "reference": {
-                        "name": "items",
+                        "name": "dockedItems",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
                         "border": "1px",
                         "designer|displayName": "Form Data keluarga",
+                        "dock": "top",
                         "height": "auto",
                         "margin": "50 50 50 50"
                     },
@@ -5053,7 +5143,8 @@
                         "border": "auto",
                         "height": "auto",
                         "margin": "auto",
-                        "designer|displayName": "string"
+                        "designer|displayName": "string",
+                        "dock": "string"
                     },
                     "name": "MyToolbar64",
                     "designerId": "fc0736b3-c071-43dc-b742-8d913da7d37d",
@@ -5838,13 +5929,14 @@
                 {
                     "type": "Ext.toolbar.Toolbar",
                     "reference": {
-                        "name": "items",
+                        "name": "dockedItems",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
                         "border": "1px",
                         "designer|displayName": "footer",
+                        "dock": "top",
                         "height": 95
                     },
                     "configAlternates": {
@@ -5944,7 +6036,39 @@
                                         "width": "auto"
                                     },
                                     "name": "MyButton13",
-                                    "designerId": "17dbab8e-d7f5-4884-9989-d6ae478a39b0"
+                                    "designerId": "17dbab8e-d7f5-4884-9989-d6ae478a39b0",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onButtonClick",
+                                                "implHandler": [
+                                                    "var form = button.up('form'),",
+                                                    "    values = form.getValues();",
+                                                    "",
+                                                    "",
+                                                    "var value = form. getForm (). findField (\"namapanggilan\"). getValue (); ",
+                                                    "console.log(value);",
+                                                    ""
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onButtonClick",
+                                            "designerId": "ee92b1d3-9bb8-4cc4-a717-ea86a1406564"
+                                        }
+                                    ]
                                 },
                                 {
                                     "type": "Ext.button.Button",

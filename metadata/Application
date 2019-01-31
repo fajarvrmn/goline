@@ -6,12 +6,20 @@
     },
     "codeClass": null,
     "userConfig": {
+        "controllers": [
+            "navigation"
+        ],
         "models": [
-            "Unitpelayanann"
+            "poli"
         ],
         "name": "GOlineplus",
         "requires": [
             "Ext.window.MessageBox"
+        ],
+        "stores": [
+            "polis",
+            "MyJsonStore",
+            "MyJsonStore2"
         ],
         "views": [
             "Menu",
@@ -20,15 +28,17 @@
             "UnitPelayananWindow",
             "ADM",
             "admPanel",
-            "FormRawJal3",
-            "FormRawJal1"
+            "Dokter",
+            "Pekerjaan"
         ]
     },
     "configAlternates": {
         "name": "string",
         "requires": "typedarray",
         "views": "typedarray",
-        "models": "typedarray"
+        "models": "typedarray",
+        "controllers": "typedarray",
+        "stores": "typedarray"
     },
     "name": "Application",
     "designerId": "application"

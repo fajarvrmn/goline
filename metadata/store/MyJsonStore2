@@ -1,0 +1,62 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "designer|userClassName": "MyJsonStore2",
+        "model": "poli",
+        "storeId": "MyJsonStore2"
+    },
+    "configAlternates": {
+        "autoLoad": "boolean",
+        "designer|userClassName": "string",
+        "model": "model",
+        "storeId": "string"
+    },
+    "name": "MyJsonStore2",
+    "designerId": "5d6e617b-d27d-4ada-a289-cd0f25caaede",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "actionMethods": [
+                    "{\"read\":\"GET\"}"
+                ],
+                "url": "http://192.168.88.22:8000/api/poli"
+            },
+            "configAlternates": {
+                "actionMethods": "object",
+                "url": "string"
+            },
+            "name": "MyAjaxProxy2",
+            "designerId": "a348acf3-1581-4433-bdbe-180041e3dec6",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "data"
+                    },
+                    "configAlternates": {
+                        "rootProperty": "string"
+                    },
+                    "name": "MyJsonReader2",
+                    "designerId": "1a0763db-5440-469d-ac0d-b829385334d8"
+                }
+            ]
+        }
+    ]
+}

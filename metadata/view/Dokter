@@ -6,25 +6,23 @@
     },
     "codeClass": null,
     "userConfig": {
-        "bodyBorder": false,
-        "border": false,
-        "designer|userAlias": "unitpelayananwindow",
-        "designer|userClassName": "UnitPelayananWindow",
-        "title": "Unit Pelayanan",
+        "designer|userAlias": "dokter",
+        "designer|userClassName": "Dokter",
+        "height": "",
+        "title": "Dokter Praktek",
         "width": "40%"
     },
     "configAlternates": {
-        "bodyBorder": "boolean",
-        "border": "boolean",
         "designer|userAlias": "string",
         "designer|userClassName": "string",
+        "height": "auto",
         "title": "string",
         "width": "auto"
     },
     "name": "MyWindow",
-    "designerId": "47405e8f-c051-4bc2-b546-82befb91e090",
-    "viewControllerInstanceId": "c398a19a-339a-41eb-a91c-2476965e0790",
-    "viewModelInstanceId": "3b0109b8-4011-4d3d-b2a8-4dc14c3f334c",
+    "designerId": "3c6c3136-2021-4b6d-999d-c11a4119f35c",
+    "viewControllerInstanceId": "04519cd1-d35f-474b-974e-2426d8de8d14",
+    "viewModelInstanceId": "dbad5721-8225-4ec1-b7a3-4f9949eb186d",
     "cn": [
         {
             "type": "Ext.toolbar.Toolbar",
@@ -45,8 +43,8 @@
                 "flex": "number",
                 "margin": "auto"
             },
-            "name": "MyToolbar5",
-            "designerId": "cf38e7df-da44-4a53-a80e-fa8adc4f0c40",
+            "name": "MyToolbar4",
+            "designerId": "ead59ead-c8b4-4563-9f76-0d483baeef0e",
             "cn": [
                 {
                     "type": "Ext.form.field.ComboBox",
@@ -60,7 +58,7 @@
                         "height": 35,
                         "layout|flex": 1,
                         "store": [
-                            "['Kode', 'Poli']"
+                            "['Kode', 'Nama Dokter']"
                         ]
                     },
                     "configAlternates": {
@@ -70,7 +68,7 @@
                         "store": "array"
                     },
                     "name": "MyComboBox4",
-                    "designerId": "c9c24f1c-6fe3-4c23-8963-6f5f658563cc"
+                    "designerId": "e66b33bf-0a62-4c0a-887a-792855cfeca2"
                 },
                 {
                     "type": "Ext.form.field.Text",
@@ -92,7 +90,7 @@
                         "margin": "auto"
                     },
                     "name": "MyTextField13",
-                    "designerId": "bda0a7be-2aeb-4db0-bc9d-c9f9450123c9"
+                    "designerId": "8fb786d9-1f02-4a6c-bdff-2da2dfe90415"
                 }
             ]
         },
@@ -109,7 +107,9 @@
                 "reference": "list",
                 "resizable": false,
                 "scrollable": true,
-                "store": null,
+                "store": [
+                    "dataPoli"
+                ],
                 "title": ""
             },
             "configAlternates": {
@@ -119,10 +119,10 @@
                 "resizable": "boolean",
                 "scrollable": "auto",
                 "title": "string",
-                "store": "store"
+                "store": "binding"
             },
-            "name": "MyGridPanel1",
-            "designerId": "dcc17dea-48a6-481d-9594-fa540d5c961c",
+            "name": "MyGridPanel",
+            "designerId": "cd6f26b2-491b-4ce3-8319-0e719da81b80",
             "cn": [
                 {
                     "type": "Ext.grid.column.Column",
@@ -142,7 +142,7 @@
                         "text": "string"
                     },
                     "name": "MyColumn1",
-                    "designerId": "3ed886fc-592a-488e-a5cb-ba947b652a8a"
+                    "designerId": "73dd96b2-d337-4610-a6ad-336b48f92818"
                 },
                 {
                     "type": "Ext.grid.column.Column",
@@ -154,7 +154,7 @@
                     "userConfig": {
                         "align": "center",
                         "dataIndex": "namapoli",
-                        "text": "Bagian"
+                        "text": "Dokter"
                     },
                     "configAlternates": {
                         "align": "string",
@@ -162,7 +162,7 @@
                         "text": "string"
                     },
                     "name": "MyColumn2",
-                    "designerId": "f7ec8717-4f6f-4959-8762-b4bda39c7bab"
+                    "designerId": "46c3e7ac-4c9e-429c-895f-a7bddd70622c"
                 }
             ]
         }

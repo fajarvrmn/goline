@@ -1,0 +1,144 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "navigation"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string"
+    },
+    "name": "MyController",
+    "designerId": "8d3641aa-6dbd-4e35-83e4-101655e23d8c",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "application"
+                ],
+                "fn": "onLaunch",
+                "implHandler": [
+                    "",
+                    "",
+                    "",
+                    "// Init the Ext history utility",
+                    "Ext.History.init();",
+                    "",
+                    "// Navigate on hash change",
+                    "Ext.History.on('change', this.navigate, this);",
+                    "",
+                    "// Navigate if initial hash is provided",
+                    "this.navigate(window.location.hash);",
+                    "",
+                    ""
+                ]
+            },
+            "configAlternates": {
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "onLaunch",
+            "designerId": "00dfd08b-4a56-450a-812e-f1da14d5db04"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "navigate"
+                ],
+                "fn": "navigate",
+                "implHandler": [
+                    "",
+                    "// id may be a hash",
+                    "if (id) {",
+                    "",
+                    "    // Remove # from id if present",
+                    "    if (id[0] == '#') id = id.slice(1);",
+                    "",
+                    "    // Set active view",
+                    "    this.getContentPanel().layout.setActiveItem(id + 'Panel');",
+                    "",
+                    "    // Set menu and page title",
+                    "    // Iterate through each menu item",
+                    "    this.getMenu().items.each(function(item) {",
+                    "",
+                    "        // Active",
+                    "        if (item.href == '#' + id) {",
+                    "            // Disable",
+                    "            item.disable();",
+                    "            // Set page title to menu item text",
+                    "            window.document.title = item.text;",
+                    "        }",
+                    "",
+                    "        // Inactive",
+                    "        else {",
+                    "            item.enable();",
+                    "        }",
+                    "",
+                    "    });",
+                    "",
+                    "}",
+                    ""
+                ]
+            },
+            "configAlternates": {
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "navigate",
+            "designerId": "d68eff3c-688d-4fa1-a6a1-441296592cb2"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "contentPanel",
+                "selector": "#contentPanel"
+            },
+            "configAlternates": {
+                "ref": "string",
+                "selector": "string"
+            },
+            "name": "contentPanel",
+            "designerId": "a0918fcf-6130-4baf-80f2-20ecd614215f"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "adm",
+                "selector": "#adm"
+            },
+            "configAlternates": {
+                "ref": "string",
+                "selector": "string"
+            },
+            "name": "adm",
+            "designerId": "c0573c0b-e99c-49af-b092-91a05a871788"
+        }
+    ]
+}

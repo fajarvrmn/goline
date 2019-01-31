@@ -1,17 +1,18 @@
 {
-    "type": "Ext.app.ViewModel",
+    "type": "Ext.app.ViewController",
     "reference": {
         "name": "items",
         "type": "array"
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userAlias": "formrawjal3",
-        "designer|userClassName": "FormRawJal3ViewModel"
+        "designer|userAlias": "pekerjaan",
+        "designer|userClassName": "DokterViewController1"
     },
     "configAlternates": {
         "designer|userAlias": "string",
         "designer|userClassName": "string"
     },
-    "designerId": "ca0151eb-7d00-4be0-9883-4ed9badc4864"
+    "name": "DokterViewController1",
+    "designerId": "0fc9e8dd-69d1-448f-8829-b588607dcb9f"
 }

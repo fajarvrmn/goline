@@ -21,7 +21,12 @@ Ext.Loader.setConfig({
 
 Ext.application({
     models: [
-        'Unitpelayanann'
+        'poli'
+    ],
+    stores: [
+        'polis',
+        'MyJsonStore',
+        'MyJsonStore2'
     ],
     views: [
         'Menu',
@@ -30,8 +35,11 @@ Ext.application({
         'UnitPelayananWindow',
         'ADM',
         'admPanel',
-        'FormRawJal3',
-        'FormRawJal1'
+        'Dokter',
+        'Pekerjaan'
+    ],
+    controllers: [
+        'navigation'
     ],
     name: 'GOlineplus',
 
@@ -40,7 +48,7 @@ Ext.application({
     ],
 
     launch: function() {
-        Ext.create('GOlineplus.view.Menu');
+        Ext.create('GOlineplus.view.FormRawJal', {renderTo: Ext.getBody()});
     }
 
 });

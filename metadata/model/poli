@@ -6,14 +6,14 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userAlias": "unitpelayanann",
-        "designer|userClassName": "Unitpelayanann"
+        "designer|userAlias": "poli",
+        "designer|userClassName": "poli"
     },
     "configAlternates": {
         "designer|userAlias": "string",
         "designer|userClassName": "string"
     },
-    "designerId": "52af1058-d265-48e9-a805-558bd1ca61c7",
+    "designerId": "f3f50df5-a987-417b-a971-68967b0d3d11",
     "cn": [
         {
             "type": "Ext.data.field.Field",
@@ -28,8 +28,8 @@
             "configAlternates": {
                 "name": "string"
             },
-            "name": "MyField2",
-            "designerId": "a7c4a096-7281-4917-bba7-134e6cdbe83d"
+            "name": "MyField",
+            "designerId": "e98b0fa0-7a38-40df-9630-a8bb28a36365"
         },
         {
             "type": "Ext.data.field.Field",
@@ -44,8 +44,8 @@
             "configAlternates": {
                 "name": "string"
             },
-            "name": "MyField3",
-            "designerId": "a00be9d1-0062-4031-847d-7c111022182e"
+            "name": "MyField1",
+            "designerId": "4e30cd3f-5b1c-4db6-bf7a-705abec151af"
         }
     ]
 }

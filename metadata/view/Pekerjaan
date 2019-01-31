@@ -6,25 +6,23 @@
     },
     "codeClass": null,
     "userConfig": {
-        "bodyBorder": false,
-        "border": false,
-        "designer|userAlias": "unitpelayananwindow",
-        "designer|userClassName": "UnitPelayananWindow",
-        "title": "Unit Pelayanan",
+        "designer|userAlias": "pekerjaan",
+        "designer|userClassName": "Pekerjaan",
+        "height": "",
+        "title": "Pekerjaan",
         "width": "40%"
     },
     "configAlternates": {
-        "bodyBorder": "boolean",
-        "border": "boolean",
         "designer|userAlias": "string",
         "designer|userClassName": "string",
+        "height": "auto",
         "title": "string",
         "width": "auto"
     },
-    "name": "MyWindow",
-    "designerId": "47405e8f-c051-4bc2-b546-82befb91e090",
-    "viewControllerInstanceId": "c398a19a-339a-41eb-a91c-2476965e0790",
-    "viewModelInstanceId": "3b0109b8-4011-4d3d-b2a8-4dc14c3f334c",
+    "name": "Dokter1",
+    "designerId": "79795251-3685-475c-ac72-91ceeb05d833",
+    "viewControllerInstanceId": "0fc9e8dd-69d1-448f-8829-b588607dcb9f",
+    "viewModelInstanceId": "a2169642-ab72-41ce-8291-e88d904d6430",
     "cn": [
         {
             "type": "Ext.toolbar.Toolbar",
@@ -45,8 +43,8 @@
                 "flex": "number",
                 "margin": "auto"
             },
-            "name": "MyToolbar5",
-            "designerId": "cf38e7df-da44-4a53-a80e-fa8adc4f0c40",
+            "name": "MyToolbar8",
+            "designerId": "99960cac-9de8-4e4f-9cd6-4081179f7e7d",
             "cn": [
                 {
                     "type": "Ext.form.field.ComboBox",
@@ -60,7 +58,7 @@
                         "height": 35,
                         "layout|flex": 1,
                         "store": [
-                            "['Kode', 'Poli']"
+                            "['Kode', 'Pekerjaaan']"
                         ]
                     },
                     "configAlternates": {
@@ -70,7 +68,7 @@
                         "store": "array"
                     },
                     "name": "MyComboBox4",
-                    "designerId": "c9c24f1c-6fe3-4c23-8963-6f5f658563cc"
+                    "designerId": "6ace55e8-742b-4e30-8a4e-cfc7daadba91"
                 },
                 {
                     "type": "Ext.form.field.Text",
@@ -92,7 +90,7 @@
                         "margin": "auto"
                     },
                     "name": "MyTextField13",
-                    "designerId": "bda0a7be-2aeb-4db0-bc9d-c9f9450123c9"
+                    "designerId": "dc683688-52f8-4344-9243-1895bafb15ad"
                 }
             ]
         },
@@ -109,7 +107,9 @@
                 "reference": "list",
                 "resizable": false,
                 "scrollable": true,
-                "store": null,
+                "store": [
+                    "dataPoli"
+                ],
                 "title": ""
             },
             "configAlternates": {
@@ -119,10 +119,10 @@
                 "resizable": "boolean",
                 "scrollable": "auto",
                 "title": "string",
-                "store": "store"
+                "store": "binding"
             },
-            "name": "MyGridPanel1",
-            "designerId": "dcc17dea-48a6-481d-9594-fa540d5c961c",
+            "name": "MyGridPanel",
+            "designerId": "4c7b2650-9f9d-4a02-b683-22d5a86ba583",
             "cn": [
                 {
                     "type": "Ext.grid.column.Column",
@@ -142,7 +142,7 @@
                         "text": "string"
                     },
                     "name": "MyColumn1",
-                    "designerId": "3ed886fc-592a-488e-a5cb-ba947b652a8a"
+                    "designerId": "53ff0144-b843-4e7a-a48e-3d8b0b6757fe"
                 },
                 {
                     "type": "Ext.grid.column.Column",
@@ -154,7 +154,7 @@
                     "userConfig": {
                         "align": "center",
                         "dataIndex": "namapoli",
-                        "text": "Bagian"
+                        "text": "Pekerjaan"
                     },
                     "configAlternates": {
                         "align": "string",
@@ -162,7 +162,77 @@
                         "text": "string"
                     },
                     "name": "MyColumn2",
-                    "designerId": "f7ec8717-4f6f-4959-8762-b4bda39c7bab"
+                    "designerId": "fe4c2c72-8b2f-484b-8ecc-0dceef18e441"
+                }
+            ]
+        },
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "header",
+                "dock": "top",
+                "flex": 1,
+                "margin": "20 20 20 20"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "dock": "string",
+                "flex": "number",
+                "margin": "auto"
+            },
+            "name": "MyToolbar4",
+            "designerId": "35b9ffd0-041f-49e6-8075-dc5706183f0c",
+            "cn": [
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "flex": 1,
+                        "height": 35,
+                        "layout|flex": 1,
+                        "store": [
+                            "['Kode', 'Pekerjaaan']"
+                        ]
+                    },
+                    "configAlternates": {
+                        "flex": "number",
+                        "height": "auto",
+                        "layout|flex": "number",
+                        "store": "array"
+                    },
+                    "name": "MyComboBox4",
+                    "designerId": "70c4cad2-2c02-4fc9-86b5-dcd27ab90a3e"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "flex": 3,
+                        "height": 35,
+                        "layout|flex": 1,
+                        "margin": "0 0 0 20"
+                    },
+                    "configAlternates": {
+                        "flex": "number",
+                        "height": "auto",
+                        "layout|flex": "number",
+                        "margin": "auto"
+                    },
+                    "name": "MyTextField13",
+                    "designerId": "893e1204-237f-48a5-89b6-39323016119e"
                 }
             ]
         }
